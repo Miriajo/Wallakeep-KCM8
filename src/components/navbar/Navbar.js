@@ -3,6 +3,8 @@ import React from "react";
 import './Navbar.css';
 import {currentUser, logout} from "../../services/Util";
 
+import {checkIfUserHasSignIn} from "../../services/Util";
+
 // ESTE FICHERO NO HAY QUE TOCARLO
 
 const HOME_PATH = "/home/";
@@ -14,7 +16,10 @@ class Navbar extends React.Component {
         super(props);
 
         // 3. Comprobar que el usuario se ha registrado
-
+        if (checkIfUserHasSignIn(this.props.history)) {
+            this.props.history.replace(props.location.pathname);
+        }
+       
         this.state = {
             location: props.location.pathname
         };
