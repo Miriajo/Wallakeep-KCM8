@@ -1,8 +1,10 @@
-#Wallakeep
+# Wallakeep
 
 ## Description
 
 This project is a React application to manage NodePop API.
+
+This is an educational exercise for KeepCoding Mobile Bootcamp 8.
 
 ## First steps
 
