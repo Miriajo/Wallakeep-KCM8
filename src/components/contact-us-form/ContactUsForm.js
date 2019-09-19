@@ -32,7 +32,7 @@ export default class ContactUsForm extends React.Component {
 
         
         // 3. Una vez verificada enviar a través de this.props.onSubmit      
-      
+
     }
 
     handleTyping(event) {
@@ -56,12 +56,19 @@ export default class ContactUsForm extends React.Component {
             alert(error);
         }
 
+        // Inicializado del subject y message para que el usuario introduzca más mensajes si quiere
+        this.setState({
+            subject: "",
+            message: ""
+        });
+
         this.props.onSubmit({
             name,
             surname,
             subject,
             message
         });
+
     }
 
     isError = (errorString) => {

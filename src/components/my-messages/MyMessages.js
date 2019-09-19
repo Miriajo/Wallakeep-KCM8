@@ -6,6 +6,8 @@ export default class MyMessages extends Component {
     render() {
         let messages = this.context;
 
+        let i = 0;
+
         if (!messages) messages = [];
 
         return (
@@ -23,14 +25,14 @@ export default class MyMessages extends Component {
                     </tr>
                     {/*4. Mostrar los mensajes en la tabla a través de una función map*/}
                     {messages.map((msg) => (
-                        <tr>
+                        <tr key={i += 1}>
                             <td>
                                 {msg.subject}
                             </td>
                             <td>
                                 {msg.message}
                             </td>
-                            </tr>
+                        </tr>
                     ))}
                     </tbody>
                 </table>

@@ -53,3 +53,14 @@ export const getSavedMessages = () => {
 export const saveMessages = (messages) => {
     return sessionStorage.setItem(MESSAGES_SESSION_KEY, JSON.stringify(messages));
 };
+
+export const initialSearch = () => {
+
+    if(currentUser().tag != null)
+    {
+        return {tag: currentUser().tag};
+    }
+    else {
+        return {};
+    }
+};
