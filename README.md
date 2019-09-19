@@ -1,3 +1,19 @@
+#Wallakeep
+
+## Description
+
+This project is a React application to manage NodePop API.
+
+## First steps
+
+First of all, you need to make a fork and install NodePop API (branch: react-module) --> https://github.com/Miriajo/NodePopGH.git
+
+**Note:** Please, read NodePop ReadME to install and run properly the API in your local.
+
+Once you have it installed in local you can continue starting this project.
+
+# Execution
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
